@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container" style="margin-bottom: 20px; padding: 20px;">
+    <div class="row">
+        <form method="post" class="mb-3 shadow" style="margin-bottom: 20px; padding: 20px;">
+             {% csrf_token %}
+
+<div class="form-group">
+     <label for="name">Name</label>
+     <input type="text" class="form-control" name="name" placeholder="enter name" required><br>
+</div>
+
+<div class="form-group">
+    <label for="name">Age</label>
+    <input type="number" class="form-control" name="age" id="age" placeholder="Enter age"><br>
+</div>
+
+<div class="form-group">
+    <label for="name">Email</label>
+    <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required><br>
+</div>
+
+<div class="form-group">
+    <label for="name">Phone</label>
+    <input type="tel"  class="form-control" name="phone" id="phone" placeholder="Enter phone number" required><br>
+</div>
+
+<div class="form-group">
+    <label for="name">DOB</label>
+     <input type="date" class="form-control" name="dob" id="dob" required><br>
+</div>
+
+<div class="form-group">
+    <label for="name">Address</label>
+     <textarea class="form-control" name="address" id="address" placeholder="Enter address" required></textarea><br>
+</div>
+
+<div class="form-group">
+    <label for="name">Gender</label><br>
+     <input type="radio"  name="gender" id="male" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other" value="other" required>
+        <label for="other">Other</label><br>
+</div>
+
+<div class="form-group">
+    <label for="name">Department</label>
+      <select class="form-control" name="dropdown" id="dropdown1" required>
+            <option value="">Select an option</option>
+            <option value="option1">Computer Science</option>
+            <option value="option2">Biology</option>
+            <option value="option3">Earth and Space Sciences</option>
+          <option value="option3">English and Modern Languages</option>
+          <option value="option3">Mathematics</option>
+        </select><br>
+</div>
+
+<div class="form-group">
+    <label for="name">Courses</label>
+       <select class="form-control" name="dropdown" id="dropdown2" required>
+            <option value="">Select an option</option>
+            <option value="option1">B.Arch</option>
+            <option value="option2">BCA</option>
+            <option value="option3">B.Sc</option>
+           <option value="option3">BPharma</option>
+           <option value="option3">BDS</option>
+        </select><br>
+</div>
+
+<div class="form-group">
+    <label for="name">Purpose</label>
+       <select class="form-control" name="dropdown" id="dropdown3" required>
+            <option value="">Select an option</option>
+            <option value="option1">Microsoft Integrations Support and DBA</option>
+            <option value="option2">Field Executive / Pharma Executive</option>
+            <option value="option3">Camp Freelance Dentist</option>
+           <option value="option3">Architect- Diploma</option>
+           <option value="option3">Talent Acquisition Specialist</option>
+        </select><br>
+</div>
+
+<div class="form-group">
+    <label for="name">Materials</label><br>
+        <label for="check_box">Pen</label>
+       <input type="checkbox" class="btn-group"  name="check_box" id="check_box1">
+    <label for="check_box">Note book</label>
+    <input type="checkbox" class="btn-group" name="check_box" id="check_box2">
+    <label for="check_box">Exam papper</label>
+    <input type="checkbox" class="btn-group" name="check_box" id="check_box3"><br>
+</div>
+
+
+    <input type="submit" class="btn btn-success">
+
+            </form>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}
